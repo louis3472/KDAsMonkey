@@ -116,11 +116,11 @@ public class SpeechRecognitionGameController : MonoBehaviour
         scoreText.text = $"Score: {totalScore}";
     }
 
-    private void OnDestroy()
-    {
-        recognizer.StopContinuousRecognitionAsync();
-    }
-
+  //  private void OnDestroy()
+  //  {
+  //     recognizer.StopContinuousRecognitionAsync();
+  //  }          
+  //
     private void OnPhraseRecognizing(object sender, SpeechRecognitionEventArgs args)
     {
         string recognizedText = args.Result.Text;
