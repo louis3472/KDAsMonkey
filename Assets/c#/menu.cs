@@ -62,7 +62,7 @@ public class menu : MonoBehaviour
         else if (imageState == 1)
         {
             buttonSkip.gameObject.SetActive(false);
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Tutorial");
         }
     }
 
